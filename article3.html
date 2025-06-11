@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article3</title>
+    <link rel="icon" type="image/x-icon" href="images/image8.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+
+                  /*  header */
+                header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:20px 25px;
+                background:white;
+                color: #fff;
+                font-size:17px;
+                margin:20px;
+                }
+
+                .logo img {
+                width: 50px;
+                }
+
+                /* Bouton burger */
+                .toggle-btn {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                }
+                /* Bouton burger */
+                .toggle-btn {
+                 display: none;
+                 flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                }
+                .bar {
+                width: 30px;
+                height: 4px;
+                background-color:black;
+                border-radius: 5px;
+                }
+
+                /* Cacher checkbox */
+                .menu-toggle {
+                display: none;
+                }
+                 /* Menu navigation */
+                .menu ul {
+                display: flex;
+                gap: 30px;
+                }
+                .menu ul{
+                     padding: 20px;
+                    margin: 15px;
+                    gap: 20px;
+                }
+                .menu a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                }
+
+                .menu a:hover {
+                text-decoration: underline;
+                color:#4900BD;
+                }
+
+                /* Responsive */
+                @media screen and (max-width: 768px) {
+                    .toggle-btn {
+                     display: flex;
+                }
+                .menu {
+                    display: none;
+                     position: absolute;
+                    top: 70px;
+                    right: 20px;
+                    background: whitesmoke;
+                    padding: 15px;
+                    border-radius: 10px;
+                    gap: 15px;
+                    z-index: 1000;
+                    }
+
+                    #menu-toggle:checked ~ .menu {
+                        display: flex;
+                    }
+                    }
+                
+
+         
+             
+                
+
+            /* **** article **** */
+             article {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            box-shadow: 1px 1px 2px rgb(101, 96, 96);
+        }
+
+        .article-excerpt {
+            margin: 20px;
+            font-size: 20px;
+            text-align: center;
+            width: 50%;
+            gap: 20px;
+        }
+
+        place-imag{
+            width: 50%;
+        }
+            
+
+
+        
+        .place-image img{
+            
+            border-radius: 10px;
+            margin-top: 16px;
+            max-width: 100%;
+            flex: 1;
+            height: auto;
+            display: block;
+         }
+        .article-excerpt p{
+            font-size: 28px;
+            margin-bottom: 15px;
+            padding-left: 50px;
+            max-width: 500px;
+            flex: 1;
+
+        }
+        @media (max-width:768px){
+                    .article{
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                    .place-imag, .article-excerpt{
+                        flex: unset;
+                        width: 100%;
+                    }
+            
+
+
+          }
+
+        .contener-baniere{
+                margin-top:22px;
+                width: 100%;
+                background-image: url("../images/image3.jpg");
+                height: 500px;
+                background-size: cover;
+            }
+            .text-baniere{
+            position: absolute;
+        
+            left: 3%;
+            color:white;
+        }
+         .text-baniere h1{
+            font-weight: 700;
+            font-size: 7vh;
+            margin-top: 90px;
+            }
+            .text-baniere p{
+                font-size: 5vh;
+            font-style: italic;
+            margin-top: 10px;
+            
+         }
+         .titre-at h3{
+                 text-align: center;
+                font-weight: 600;
+                padding: 1vh;
+                padding-top: 5vh;
+                font-style: italic;
+            }
+ 
+
+            .titre-at span{
+                 width: 85px;
+                height: 3px;
+                display: block;
+                background-color: blue;
+                margin: 0 auto;
+                margin-bottom: 15px;
+
+                
+            }
+              /****footer***/
+            footer{
+            background: #16003D;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid white;
+            color: #666;
+            }
+
+            footer .newsletter-footer {
+            margin-bottom: 30px;
+            }
+
+            footer .newsletter-footer h2 {
+                 color:white;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+           
+            footer .newsletter-footer form {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                }
+                 footer .newsletter-footer input[type="email"] {
+                padding: 12px 20px;
+                border: none;
+                border-radius: 30px;
+                font-size: 1rem;
+                width: 250px;
+                max-width: 80%;
+                outline: none;
+                }
+                footer .newsletter-footer button {
+                padding: 12px 18px;
+                border: none;
+                border-radius: 30px;
+                background: #4900BD;
+                color: #000;
+                font-size: 1.1rem;
+                cursor: pointer;
+                transition: background 0.3s;
+                }
+
+                footer .newsletter-footer button:hover {
+                background:#4900BD;
+                }
+                 footer .social-icons {
+                margin-bottom: 20px;
+                }
+                footer .social-icons a {
+                color:white;
+                margin: 0 10px;
+                font-size: 1.8rem;
+                text-decoration: none;
+                transition: color 0.3s, transform 0.3s;
+                }
+
+                footer .social-icons a:hover {
+                color: #ffffff;
+                transform: scale(1.2);
+                }
+
+                footer p {
+                    color:white;
+                margin-top: 20px;
+                font-size:0.9rem;
+
+                }
+                
+            
+        
+
+            
+    </style>
+</head>
+  <!--balise  header-->
+      
+        <header id="lien-header">
+            <div class="logo">
+                <img src="images/image8.jpg"alt="">
+            </div>
+             <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+            <label for="menu-toggle" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </label>
+            
+               
+
+             <!---sectoin menu-->
+     
+                <nav class="menu">
+                <ul>
+             <li>
+                <a href="index.html" class="active">Accueil</a>
+             </li>
+
+             <li>
+                <a href="article1.html">article</a>
+                </li>
+                <li>
+                <a href="article2.html">article2</a>
+                </li>
+                <li>
+                <a href="article3.html">article3</a>
+                </li>
+
+             
+             <li>
+                <a href="apropos.html">Apropos</a>
+                </li>
+
+             <li>
+                <a href="contac.html">contact</a>
+             </li>
+            </ul>
+         </nav>
+        </header><br><br>
+
+         <!---section baneier-->
+       <div class="contener-baniere">
+        <div  class="text-baniere">
+            <h1 > Bienvenue sur IA Explorer</h1>
+        <p>Explore le futu de l'IA avec nous</p>
+        </div><br><br>
+
+        </div>
+       <div class="titre-at">
+        <h3>ARTICLE 3</h3>
+       <span></span>
+       </div>
+
+       <!-- lient ver article -->
+        <div class="lient-article">
+        <article class="article">
+            <div class="place-image">
+            <img src="images/image6.jpg" alt="article1">
+            </div>
+
+            <div class="article-excerpt">
+                <p>
+                    <h3>Les 5 Fonctionnements des IA pour les Images?</h3>
+                    Les intelligences artificielles capables de générer ou traiter des images reposent sur plusieurs techniques spécifiques. Voici les 5 principaux fonctionnements :
+                    1. Génération d’images (text-to-image)
+                    → L’IA crée une image à partir d’une description écrite (par exemple : “Un chat cosmonaute dans l’espace”).
+
+
+                    2. Reconnaissance d’images
+                    → Elle identifie des objets, des visages ou des éléments dans une image (comme Google Photos qui reconnaît tes amis).
+
+
+                    3. Retouche et amélioration automatique
+                    → Des IA améliorent la qualité des images (réduction du bruit, netteté, couleurs) automatiquement.
+
+
+                    4. Style Transfer
+                    → Cette technique permet de transformer une image en lui appliquant le style d’un autre tableau ou d’un artiste (comme une photo transformée en peinture façon Van Gogh).
+                    
+                        5. Deepfake
+                        → Les IA peuvent superposer le visage d’une personne sur une vidéo existante ou créer des vidéos réalistes à partir de visages et de voix.
+
+                 </p>
+
+          </div>
+        </article>
+
+
+
+         <footer>
+            <div class="newsletter-footer">
+                <h2><i class="fas fa-envelope"></i> Abonne-toi à la newsletter IA</h2>
+                <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Ton adresse e-mail" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="tel:786329748"><i class="fas fa-phone-alt"></i></a>
+            </div>
+
+            <p>© 2025 Al Explorer — Connecté au monde et au futur.</p>
+            </footer>
+
+        
+    
+          
+
+
+
+
+        
+            
+         
+    
+</body>
+</html>
