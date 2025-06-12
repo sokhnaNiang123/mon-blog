@@ -296,17 +296,7 @@
                 
 
             }
-             .logo img{
-                max-width: 500%;
-                max-height: 50px;
-                position: absolute;
-                left: 10vh;
-                top:12%;
-                margin-bottom: 60%;
 
-            }
-            
-                   
             .active{
                 color: #4900BD!important;
             }
@@ -396,6 +386,10 @@
                     border-radius: 10px;
                     gap: 15px;
                     z-index: 1000;
+                    }
+                    .menu ul{
+                        display:block;
+                        padding:10px;
                     }
 
                     #menu-toggle:checked ~ .menu {
