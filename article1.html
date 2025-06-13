@@ -118,7 +118,7 @@
                     flex: 1;
                 }
 
-                .place-imag{
+            .place-imag{
                     width: 50%;
                     margin-top: 16px;
                     max-width: 500px;
@@ -129,7 +129,8 @@
                     width: 100%;
                     border-radius: 10px;
                     margin-top: 16px;
-                    max-width: 500px;
+                    max-width: 100%;
+                    flex:1
                     height: auto;
                     display: block;
                 }
@@ -137,8 +138,9 @@
                 .article-excerpt p{
                     font-size: 28px;
                     margin-bottom: 15px;
-                    padding-left: 20px;
-                    max-width: 400px;
+                    padding-left: 50px;
+                    max-width: 500px;
+                    flex:1
                 }
                 .place-text h3{
                         text-align: center;
@@ -218,14 +220,13 @@
                             color: #4900BD!important;
 
                             }
-                             
-                                }
+        
                                 @media (max-width:768px){
                                     .article{
                                         flex-direction: column;
                                         text-align: center;
                                     }
-                                    .place-imag, .article-excerpt{
+                                    .place-imag , .article-excerpt{
                                         flex: unset;
                                         width: 100%;
                                     }
